@@ -32,8 +32,8 @@ $base-black: #282425;
 $base-white: #fff;
 $base-grey-light: #566562;
 $base-grey-dark: #3A4643;
-$main-color: #329F87;
-$main-color-light: #85FFC7;
+$main-color: rgb(59, 175, 150);
+$main-color-light: rgb(88, 209, 153);
 
 // button primary
 $btn-primary-background: $main-color;
@@ -42,6 +42,8 @@ $btn-primary-color: $base-white;
 
 html {
   box-sizing: border-box;
+  font-size: 7px;
+  min-height: 100%;
   @include media(sm) {
     font-size: 8px;
   }
@@ -51,6 +53,10 @@ html {
   @include media(lg) {
     font-size: 10px;    
   }
+}
+
+body {
+  min-height: 100%;
 }
 
 *, *:before, *:after {
@@ -72,7 +78,7 @@ img {
   margin: 0 auto;
   padding: 0 1.5rem;
   max-width: 40rem;
-  @include media(md) { 
+  @include media(sm) { 
     max-width: 120rem;
 
   }
@@ -86,14 +92,22 @@ body {
   color: $base-white;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
-  padding: 2rem 0;
+  padding: 0;
+  width: 100%;
+  order: 1;
+  margin-bottom: 1rem;
+  @include media(md) {
+    margin-bottom: 0rem;
+    width: auto;
+    order: 2;
+  }
 }
 h2 {
   font-size: 3rem;
   font-weight: 700;
-  padding: 2rem 0;
+  padding:  0 0 2rem 0;
 }
 h3 {
   font-size: 2.5rem;
