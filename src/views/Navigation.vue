@@ -11,7 +11,7 @@
 
 
       <ul class="menu" v-bind:class="{'open' : openMenu}">
-        <li><a href="">Cviky</a></li>
+        <li><router-link to="/exercise">Cviky</router-link></li>
         <li><a href="">Nový trénink</a></li>
         <li><a href="">Historie</a></li>
         <li><a href="">Progress</a></li>
