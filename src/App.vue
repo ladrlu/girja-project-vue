@@ -1,14 +1,21 @@
 <template>
     <div class="main-container">
     <navigation/>
-    <div id="app">
-      <home/>
-    </div>
+      <div id="app">
+      
+
+         <router-view/>
+
+      </div>
   </div>
 </template>
 <script>
 import Home from './views/Home.vue'
 import Navigation from './views/Navigation.vue'
+import Exercise from './views/Exercise.vue'
+
+
+
 
 export default {
   components: {
