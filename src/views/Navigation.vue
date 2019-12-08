@@ -64,7 +64,12 @@
     li {
       background-color: rgba(255, 255, 255, 0.3);
       margin: 1rem 0;
-      padding: 0.5rem;
+      padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+      border-radius: 5px;
+      &:hover,
+      &:focus {
+        background-color: $main-color;
+      }
     }
 
     a {
