@@ -5,6 +5,8 @@
 
     <exercise-detail />
 
+    <rating />
+
   </div>
 </template>
 
@@ -12,12 +14,15 @@
 
 import ExercisesList from '@/components/ExercisesList.vue';
 import ExerciseDetail from '@/components/ExerciseDetail.vue';
+import Rating from '@/components/Rating.vue';
+
 
 export default {
   name: 'exercise',
   components: {
     'exercises-list' : ExercisesList,
-    'exercise-detail' : ExerciseDetail
+    'exercise-detail' : ExerciseDetail,
+    'rating' : Rating,
   }
 }
 </script>
